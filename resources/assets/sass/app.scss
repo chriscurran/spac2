@@ -1,0 +1,103 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.panel-default>.panel-heading {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.spac-menu {
+	margin-top:60px;
+	//margin-right:28px;
+}
+
+.spac-menu-items li a {
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.spac-body {
+	margin-top:60px;
+	padding-left:0px;
+}
+.spac-container .panel-heading {
+	font-size:20px;
+	font-weight:bold;
+}
+
+.spac-header-title {
+	background:#eeeeee;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	background:#eeeeee;
+}
+
+
+
+.apodDiv {
+	text-align:center;
+	margin-top:20px;
+	padding-top:20px;
+	border-top:1px solid lightgrey;
+}
+.apodDiv A:link {text-decoration: none; color: blue }
+.apodDiv A:visited {text-decoration: none; color:blue }
+.apodDiv A:active {text-decoration: none; }
+.apodDiv A:hover {text-decoration: underline; color:red ;}
+
+.apodImg {
+    border:1px solid gray;
+}
+
+.resourceTopicTitles {
+	margin-top:30px;
+}
+
+#newsFeed h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top:16px;
+	margin-bottom:4px;
+}
+
+.membershipJoinRenewForm {
+	margin-left:20px;
+}
+
+.membershipJoinRenewForm .control-label {
+	padding-right:0;
+}
+
+.membership_desc {
+    font-size: 80%;
+    font-style: italic;
+    color: #332a24;
+}
+
+.col1x {
+	padding-right: 10px;
+}
+
+.contactUsMessage {
+	min-height:200px !important;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.viewing-map-div {
+	margin-top:20px;
+	margin-left:20px;
+}
+
+.viewing-map-div h4 {
+	font-weight:bold;
+}
