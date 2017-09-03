@@ -13,7 +13,7 @@
 
 
 	?>
-
+	
     <div class="panel panel-default">
         <div class="panel-heading">Orange Blossom Special</div>
 
@@ -34,7 +34,7 @@
 					-->
 
 				    <h4>
-						January 25, through January 29, 2017
+						February 7th through 11th 2018
 				    </h4>
 
 				    <DIV style="text-align:left; margin-top:20px; padding-left:10px; padding-right:10px;">
