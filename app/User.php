@@ -52,7 +52,15 @@ class User extends Authenticatable
     }
 
     public function isAdmin() {
-        return ($this->is_admin === 1);
+        return ($this->access === 'a');
+    }
+
+    public function isLeadership() {
+        return ($this->access === 'l');
+    }
+
+    public function isAdminOrLeadership() {
+        return ($this->access === 'a' || $this->access === 'l');
     }
 
     public function setPasswordAttribute($value) {
@@ -63,37 +71,44 @@ class User extends Authenticatable
     public function getMinor1AgeAttribute($value) {
         if ($value === null)
             return null;
+        $value = substr($value,0,10);
         return Carbon::createFromFormat('Y-m-d', $value)->format("m-d-Y");
     }
     public function getMinor2AgeAttribute($value) {
         if ($value === null)
             return null;
+        $value = substr($value,0,10);
         return Carbon::createFromFormat('Y-m-d', $value)->format("m-d-Y");
     }
     public function getMinor3AgeAttribute($value) {
         if ($value === null)
             return null;
+        $value = substr($value,0,10);
         return Carbon::createFromFormat('Y-m-d', $value)->format("m-d-Y");
     }
     public function getMinor4AgeAttribute($value) {
         if ($value === null)
             return null;
+        $value = substr($value,0,10);
         return Carbon::createFromFormat('Y-m-d', $value)->format("m-d-Y");
     }
     public function getMinor5AgeAttribute($value) {
         if ($value === null)
             return null;
+        $value = substr($value,0,10);
         return Carbon::createFromFormat('Y-m-d', $value)->format("m-d-Y");
     }
 
     public function getJoinedAttribute($value) {
         if ($value === null)
             return null;
+        $value = substr($value,0,10);
         return Carbon::createFromFormat('Y-m-d', $value)->format("m-d-Y");
     }
     public function getRenewAttribute($value) {
         if ($value === null)
             return null;
+        $value = substr($value,0,10);
         return Carbon::createFromFormat('Y-m-d', $value)->format("m-d-Y");
     }
 

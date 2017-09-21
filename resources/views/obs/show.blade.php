@@ -13,7 +13,7 @@
 
 
 	?>
-
+	
     <div class="panel panel-default">
         <div class="panel-heading">Orange Blossom Special</div>
 
@@ -34,12 +34,12 @@
 					-->
 
 				    <h4>
-						January 25, through January 29, 2017
+						February 7th through 11th 2018
 				    </h4>
 
 				    <DIV style="text-align:left; margin-top:20px; padding-left:10px; padding-right:10px;">
 
-		            Please consider this your personal invitation to our annual international star party. For twenty-
+		            Please, please consider this your personal invitation to our annual international star party. For twenty-
 		            three years the St. Petersburg Astronomy Club has hosted The Orange Blossom Star Party for all those who enjoy
 		            getting together to socialize and learn about the night sky, new astronomical equipment, and techniques. 
 					<p>

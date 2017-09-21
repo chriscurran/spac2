@@ -12,3 +12,4 @@ yarn-error.log
 .env.*.php
 .env.php
 .env
+t2-micro.ppk

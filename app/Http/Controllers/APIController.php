@@ -8,17 +8,22 @@ use Illuminate\Support\Facades\Hash;
 use App\User;
 
 
-class AdminController extends Controller
+class APIController extends Controller
 {
 
-    public function main() {
+    public function getMembers() {
+
+    	$request = request();    	
+    	$key = $request->input('key');
+    	if ($key !== env("API_KEY","123")) {
+    		return response()->json("Invalid access");
+    	}
 
         $members = User::where('membership_type', "!=", "x")
                ->orderBy('name', 'asc')
                ->get();
 
-		return view('admin.main')->with("members", $members);
+        return response()->json($members);
     }
-
 
 }

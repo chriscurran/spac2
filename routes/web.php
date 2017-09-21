@@ -49,6 +49,10 @@ Route::get('/obs', "OBSController@obs");
 
 Route::get('/admin', "AdminController@main")->middleware('admin');
 
+Route::get('/paypal', "PayPal@get");
+Route::post('/paypal', "PayPal@paypal_post");
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

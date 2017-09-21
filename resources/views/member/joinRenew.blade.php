@@ -116,7 +116,7 @@
 			<input type="hidden" name="amount_1" id="amount_1">
 			<input type="hidden" name="custom" id="custom" value="">
 			<input type="hidden" name="currency_code" value="USD">
-			<input type="hidden" name="return" value="http://www.stpeteastronomyclub.org/resources.php">
+			<input type="hidden" name="return" value="http://www.planetcurran.com/members">
 			</form>
 
 			@else
@@ -162,7 +162,26 @@
 			//
 			event.preventDefault();
 
-			alert("submit");
+			// alert("submit");
+			debugger;
+
+			var obj = {};
+			obj.is_new = 1;
+			obj.email = "chris@planetcurran.com";
+			obj.send_email = 'r';   // member registered
+			obj.total = 19.56;
+
+			var pp_info = {
+					email: obj.email,
+					send_email: obj.send_email,
+					is_new: obj.is_new, 
+					total: obj.total 
+			}
+
+			$('#amount_1').val(calcMembershipFee());
+			$('#custom').val( JSON.stringify(pp_info) );
+			$("#membershipPaypal").submit();
+
 		});
 
 		$('.minor-age').blur(function () {
@@ -209,6 +228,22 @@
 
 			return true;
 	}
+
+	function calcMembershipFee() {
+			var val = 0;
+			var checked = $("input:checked");
+
+			_.each(checked, function(el) {
+					switch(el.id) {
+							case 'cmembertype_0':   val += 20;  break;
+							case 'cmembertype_1':   val += 25;  break;
+							case 'cmembertype_2':   val += 50;  break;
+							case 'cmembertype_3':   val += 100; break;
+					}
+			});
+			return val;
+	}
+
 
 	function updateCosts() {
 			var val = 0;

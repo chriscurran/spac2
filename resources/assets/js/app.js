@@ -7,7 +7,12 @@
 
 require('./bootstrap');
 
+require('./jquery.formatCurrency-1.4.0.min.js');
+
+require('./lib.js');
+
 window.Vue = require('vue');
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
